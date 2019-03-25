@@ -5,6 +5,19 @@ using namespace std;
 //enum day {mon=1,tue,wed,thu=10 ,fri,sat,sun};
 
 //typedef int marks;
+
+//defining structures
+
+struct  rectangle {
+    int length;
+    int breadth;
+    };
+struct  card {
+int face;
+int shape;
+int color;
+};
+
 int main()
 {
     /*
@@ -215,6 +228,7 @@ program ends it will allocate its memory to another variable
 
 */
 
+/*
 //trying to code patters
 
 //rectangle
@@ -237,6 +251,48 @@ for(i=0;i<21;i++)
 {
     cout<<"/";
 }
+
+//trying out autohotkey
+// it works
+*/
+
+//arrays
+
+//int a[5]={1,2,3};
+//cout<<a[2]<<endl;
+//structures
+//struct rectangle rect={2,3};
+//int area;
+//changing length and breadth
+//rect.length=4;rect.breadth=5;
+//area=rect.length*rect.breadth;
+//cout<<area<<endl;
+
+//52 structures for whole deck of cards
+
+/*for(int i=0;i<=51;i++)
+{
+    struct card i;
+    for(int j=0;)
+}
+*/
+//array of structures with initializations
+//struct card deck[52]={{1,0,0},{1,2,1}};
+//cout<<deck[0].shape<<endl;;
+//above is incorrect try of implementation
+//instead use array of structures
+
+//pointers
+int a=12;
+int *p;
+p=&a;
+
+cout<<a<<" "<<*p<<endl;
+//p holds address of data variable a
+
+//p=new int[5];
+
+//int[4]=2;
 
 
     return 0;
