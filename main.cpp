@@ -283,16 +283,35 @@ for(i=0;i<21;i++)
 //instead use array of structures
 
 //pointers
-int a=12;
-int *p;
-p=&a;
+//int a=12;
+//int *p;
+//p=&a;
 
-cout<<a<<" "<<*p<<endl;
+//cout<<a<<" "<<*p<<endl;
 //p holds address of data variable a
 
 //p=new int[5];
 
 //int[4]=2;
+
+//working with references
+//reference is another name given to a variable
+/*
+int a=10;
+int &r=a;
+r++;
+cout<<a<<" "<<r;
+*/
+
+//pointer to a structure
+//and accessing a structure through pointer
+struct rectangle rect={2,3};
+struct rectangle *p=&rect;
+
+cout<<rect.length<<" "<<p->length<<" "<<(*p).length<<endl;
+
+p->length=3;
+cout<<rect.length<<" "<<p->length<<" "<<(*p).length<<endl;
 
 
     return 0;
